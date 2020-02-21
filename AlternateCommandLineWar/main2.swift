@@ -28,6 +28,8 @@ class BeggarThyNeighbor {
         
         player = Hand(description:"player")
         computer = Hand(description:"computer")
+        offense = Hand(description: "Who is at offense?")
+        defense = Hand(description: "Who is at defense?")
         pot = Hand(description: "pot")
         
         //Deal to the player
@@ -42,8 +44,8 @@ class BeggarThyNeighbor {
         
         // Bounty is empty to begin
         pot.cards = []
+        
     }
-    //aight
     
     
     func switchWhoIsOffense () {
