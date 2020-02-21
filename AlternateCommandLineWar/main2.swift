@@ -11,6 +11,7 @@ import Foundation
 class BeggarThyNeighbor {
     
     
+    
     enum Suit: Int {
         case clubs = 1, spades, diamonds, hearts
     }
@@ -46,6 +47,8 @@ class BeggarThyNeighbor {
         defense = Hand(description: "Who is at defense?")
         pot = Hand(description: "pot")
         
+        reportStatus()
+        
         //Deal to the player
         if let newCards = self.deck.randomlyDealOut(thisManyCards: 26) {
             player.cards = newCards
@@ -61,7 +64,19 @@ class BeggarThyNeighbor {
         
     }
     
+    func reportStatus() {
+        print("The player's hand has \(player) cards and the computer's hand has \(computer) cards.")
+    }
     
+   
+    
+    func play() {
+        
+    }
+    
+    func addToPot () {
+        
+    }
     func switchWhoIsOffense () {
         
         if player === offense {
