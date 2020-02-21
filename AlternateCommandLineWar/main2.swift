@@ -10,6 +10,20 @@ import Foundation
 
 class BeggarThyNeighbor {
     
+    
+    enum Suit: Int {
+        case clubs = 1, spades, diamonds, hearts
+    }
+    
+    //gives numeric values to the words
+    enum faceCard: Int {
+        case jack = 1, queen, king, ace
+    }
+    
+    enum Value: Int {
+        case two = 2, three, four, five, six, seven, eight, nine, ten
+    }
+    
     //Create a deck of cards
     var deck: Deck
     

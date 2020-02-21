@@ -17,6 +17,7 @@ enum Rank : Int {
     
     // List possible cases
     case two = 2, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace
+   
     
     // Computed property to return rank
     // Really just a convenience property to make code more readable, it returns the raw value of the enumeration case but using the property name of "rank"
