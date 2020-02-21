@@ -11,16 +11,17 @@ import Foundation
 class BeggarThyNeighbor {
     
     
-    
+    //creates suit
     enum Suit: Int {
         case clubs = 1, spades, diamonds, hearts
     }
     
-    //gives numeric values to the words
+    //gives numeric values to the facecards
     enum faceCard: Int {
         case jack = 1, queen, king, ace
     }
     
+    //gives numeric values to the regular cards
     enum Value: Int {
         case two = 2, three, four, five, six, seven, eight, nine, ten
     }
@@ -64,19 +65,23 @@ class BeggarThyNeighbor {
         
     }
     
+    //call this function after each individual round
     func reportStatus() {
         print("The player's hand has \(player) cards and the computer's hand has \(computer) cards.")
     }
     
    
-    
+    //start the game
     func play() {
         
     }
     
+    //
     func addToPot () {
         
     }
+    
+    //call this function after each individual round
     func switchWhoIsOffense () {
         
         if player === offense {
