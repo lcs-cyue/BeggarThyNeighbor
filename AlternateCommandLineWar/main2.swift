@@ -43,6 +43,8 @@ class BeggarThyNeighbor {
         // Bounty is empty to begin
         pot.cards = []
     }
+    //aight
+    
     
     func switchWhoIsOffense () {
         
